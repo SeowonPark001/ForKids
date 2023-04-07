@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GmapMainActivity" >
+
+    <TextView
+        android:id="@+id/mypos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나의 현재 위치"
+        android:textSize="30dp"/>
+    <Button
+        android:id="@+id/btnPos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나의 현재 위치 찾기"
+        android:textSize="25dp" />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    <Button
+        android:id="@+id/gmap2Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="홈으로 돌아가기" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DiaryMainActivity">
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <EditText
+        android:id="@+id/edtDiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="12"
+        android:background="@color/yellow" />
+
+    <Button
+        android:id="@+id/btnWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:backgroundTint="@color/pink"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/diary2Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="홈으로 돌아가기"
+        android:backgroundTint="@color/purple_200"
+        android:textSize="20dp"/>
+</LinearLayout>

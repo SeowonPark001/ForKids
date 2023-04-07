@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFEFDD">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cafeiconView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cafe"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFEFDD"
+        android:layout_margin="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/cafenameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:text="카페록록 하도리본점"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/addressView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제주특별자치도 제주시 구좌읍 하도서문길 41"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/dateView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="2021-06-17" />
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:numStars="5"
+                android:rating="2.0"
+                android:stepSize="0.1"
+                style="?android:attr/ratingBarStyleSmall"/>
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경위도"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/locationView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="33.52903174067461"
+                android:textColor="#444444" />
+            <TextView
+                android:id="@+id/locationView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="126.87892081092457"
+                android:textColor="#444444" />
+        </LinearLayout>
+        -->
+    </LinearLayout>
+</LinearLayout>

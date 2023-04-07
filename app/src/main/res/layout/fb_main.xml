@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirebaseMain">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="노키즈존 등록"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/skyblue"
+        android:textColor="#FFFFFF"
+        android:padding="15dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/inputstore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="가게 이름" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:isIndicator="false"
+            android:layout_marginLeft="145dp"
+            android:numStars="5"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/inputaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="카페 주소"
+        android:lines="3"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등록하기" />
+    <TextView
+        android:id="@+id/cafelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="노키즈존 카페"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:textColor="#FFFFFF"
+        android:padding="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="600px" />
+
+    <Button
+        android:id="@+id/lists2Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="홈으로 돌아가기" />
+</LinearLayout>
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/inputlong"
+                android:maxLength="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:hint="위치 (경도)" />
+            <EditText
+                android:id="@+id/inputlat"
+                android:maxLength="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:hint="위치 (위도)" />
+        </LinearLayout>
+        -->
